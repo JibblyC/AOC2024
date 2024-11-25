@@ -1,4 +1,4 @@
-import { getArrayOfStrings } from "../../src/util/fileParsingFunctions";
+import { getArrayOfStrings } from "utils/fileParsingFunctions";
 
 const pathToFile: string = "tests/util/sampletextData.txt";
 
