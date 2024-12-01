@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && jest",
-    "watch": "tsc --watch & jest --watch"
+    "test": "jest",
+    "watch": "tsc --watch & jest --watch",
+    "testLocal": "npm run build && jest"
   },
   "keywords": [],
   "author": "",
