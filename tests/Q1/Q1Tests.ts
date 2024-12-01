@@ -1,7 +1,9 @@
 import { part1, part2 } from "../../src/Q1/Q1_functions";
 import { getArrayOfStrings } from "utils/fileParsingFunctions";
+import path from "path";
 
-const arrayOfInput: string[] = getArrayOfStrings("./tests/Q1/Q1TestData.txt");
+const filePath: string = path.resolve(__dirname, "Q1TestData.txt");
+const arrayOfInput: string[] = getArrayOfStrings(filePath);
 
 describe("Question1 - Part1 - AOC2024", () => {
   it("Should return the numeric value 11", () => {
