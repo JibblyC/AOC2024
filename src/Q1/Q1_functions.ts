@@ -1,13 +1,8 @@
-import { getArrayOfStrings } from "utils/fileParsingFunctions";
-import path from "path";
-
 const numberSort = (a: number, b: number) => a - b;
 
 const countOccurrences = (arr: number[], target: number): number => {
   return arr.filter((num) => num === target).length;
 };
-
-const filePath: string = path.resolve(__dirname, "Q1_realData.txt");
 
 export function part1(input: string[]): number {
   let leftList: number[] = [];
@@ -47,9 +42,3 @@ export function part2(input: string[]): number {
 
   return totalNumber;
 }
-
-const arrayOfInput: string[] = getArrayOfStrings(filePath);
-
-console.log("Part1 : " + part1(arrayOfInput));
-
-console.log("Part2 : " + part2(arrayOfInput));
