@@ -1,10 +1,10 @@
 import { part1, part2 } from "../../src/Q1/Q1Functions";
-import { getArrayOfStrings } from "../../src/utils/fileParsingFunctions";
-import path from "path";
 import { describe, it, expect } from "vitest";
+import * as fs from "fs";
+import path from "path";
 
 const filePath: string = path.resolve(__dirname, "Q1TestData.txt");
-const arrayOfInput: string[] = getArrayOfStrings(filePath);
+const arrayOfInput: string[] = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
 
 describe("Question1 - Part1 - AOC2024", () => {
   it("Should return the numeric value 11", () => {

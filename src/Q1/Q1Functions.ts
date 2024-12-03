@@ -1,8 +1,8 @@
-import { getArrayOfStrings } from "utils/fileParsingFunctions";
+import * as fs from "fs";
 import path from "path";
 
 const filePath: string = path.resolve(__dirname, "Q1_realData.txt");
-const arrayOfInput: string[] = getArrayOfStrings(filePath);
+const arrayOfInput: string[] = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
 
 const numberSort = (a: number, b: number) => a - b;
 

@@ -1,8 +1,8 @@
-import { getArrayOfStrings } from "utils/fileParsingFunctions";
+import * as fs from "fs";
 import path from "path";
 
 const filePath: string = path.resolve(__dirname, "Q2_realData.txt");
-const arrayOfInput: string[] = getArrayOfStrings(filePath);
+const arrayOfInput: string[] = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
 
 const isDescCheck = (num: number, i: number, arr: number[]) =>
   i == arr.length - 1 || num > arr[i + 1];
