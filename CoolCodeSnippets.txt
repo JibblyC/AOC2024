@@ -1,0 +1,18 @@
+
+-- Dividing into two Arrays --
+export function parseLists(input: string): [number[], number[]] {
+  return input.split('\n').reduce(
+    (acc, line) => {
+      const values = line.split(/\s+/).map(Number)
+      acc[0].push(values[0])
+      acc[1].push(values[1])
+
+      return acc
+    },
+    [[], []] as [number[], number[]]
+  )
+}
+
+-- Regex to extract numbers --
+
+const listofNums: number[] = str.match(/\d+/g)?.map(Number) || [];

@@ -1,4 +1,4 @@
-import { part1, part2 } from "../../src/Q1/Q1_functions";
+import { part1, part2 } from "../../src/Q1/Q1Functions";
 import { getArrayOfStrings } from "utils/fileParsingFunctions";
 import path from "path";
 

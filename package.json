@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run build && jest",
-    "watch": "tsc --watch & jest --watch"
+    "watch": "tsc --watch",
+    "jestWatch": "jest --watch"
   },
   "keywords": [],
   "author": "",
