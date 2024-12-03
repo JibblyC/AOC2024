@@ -1,4 +1,4 @@
-name: Run Jest Tests
+name: Run Vitest Tests
 
 on:
   push:
@@ -29,5 +29,5 @@ jobs:
         run: npm install
 
       # Run tests
-      - name: Run Jest tests
+      - name: Run vitest tests
         run: npm test

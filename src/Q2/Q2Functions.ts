@@ -1,9 +1,3 @@
-import * as fs from "fs";
-import path from "path";
-
-const filePath: string = path.resolve(__dirname, "Q2_realData.txt");
-const arrayOfInput: string[] = fs.readFileSync(filePath, "utf8").split(/\r?\n/);
-
 const isDescCheck = (num: number, i: number, arr: number[]) =>
   i == arr.length - 1 || num > arr[i + 1];
 
@@ -58,7 +52,3 @@ export function part2(input: string[]): number {
   }
   return totalCount;
 }
-
-console.log("Part1 : " + part1(arrayOfInput));
-
-console.log("Part2 : " + part2(arrayOfInput));
