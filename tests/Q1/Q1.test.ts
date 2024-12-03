@@ -1,6 +1,7 @@
 import { part1, part2 } from "../../src/Q1/Q1Functions";
-import { getArrayOfStrings } from "utils/fileParsingFunctions";
+import { getArrayOfStrings } from "../../src/utils/fileParsingFunctions";
 import path from "path";
+import { describe, it, expect } from "vitest";
 
 const filePath: string = path.resolve(__dirname, "Q1TestData.txt");
 const arrayOfInput: string[] = getArrayOfStrings(filePath);
