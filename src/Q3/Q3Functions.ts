@@ -5,7 +5,7 @@ export function part1(input: string[]): number {
     totalCount = arrayOfMults
       .map((element) => element.match(/\d+/g)?.map(Number) ?? [])
       .filter((numbers) => numbers.length >= 2)
-      .reduce((sum, numbers) => sum + numbers[0] * numbers[1], 0);
+      .reduce((sum, numbers) => sum + numbers[0] * numbers[1], 0); // Multiply and sum up
   }
   return totalCount;
 }
